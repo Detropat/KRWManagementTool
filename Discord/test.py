@@ -1,4 +1,5 @@
 import discord
+from discord import User
 
 client = discord.Client()
 
@@ -16,8 +17,8 @@ async def on_message(message):
 
     # Find out if we recognize this user from previous sessions, thus it needs to be in our own database
     # If it doesn't exists, create the user for tracking it's unique ID
-    
-    discord_user(message.author.id)
+    user = User()
+    user.get_user(message.author.id)
 
     if message.channel.name == 'reservations-wednesday':
         channel = message.channel
@@ -30,19 +31,4 @@ async def on_message(message):
         else:
             print('Not much happening')
 
-# Generic function for KRW Discord User management
-def discord_user(uid):
-    if uid is None:
-        print('No UID has been given')
-        return
-
-    print('Handling user:',uid)ö
-
-    user = DiscordUser.objects.get(discord_user=uid)
-    print(user)
-    try:
-        user = DiscordUser.objects.get(discord_user=uid)
-    except DoesNotExist:
-        user = DiscordUser.objects.create(discord_user=uid)
-
-client.run('ODE4NTc5MzQ5ODI0ODY0MjU2.YEaHbQ.FNhI1YYoCnctFFPMzf_mvdsefP0')
+client.run('ODE4NTc5MzQ5ODI0ODY0MjU2.YEaHbQ.0ZqJhBKtiiV-adnJk8-5nef5PnE')

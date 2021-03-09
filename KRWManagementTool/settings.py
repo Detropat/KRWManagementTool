@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'krw.apps.KrwConfig',
     'discordbot',
+    'Discord'
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,6 @@ WSGI_APPLICATION = 'KRWManagementTool.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'krw.sqlite3'),
     }
 }

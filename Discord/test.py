@@ -31,4 +31,4 @@ async def on_message(message):
         else:
             print('Not much happening')
 
-client.run('ODE4NTc5MzQ5ODI0ODY0MjU2.YEaHbQ.0ZqJhBKtiiV-adnJk8-5nef5PnE')
+client.run('ODE4NTc5MzQ5ODI0ODY0MjU2.YEaHbQ.xpPGn2AT6EKF5Mb-QJgXQVdyyfY')

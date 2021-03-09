@@ -1,4 +1,5 @@
 import discord
+from discord.models import DiscordUser
 
 
 class User:
@@ -12,4 +13,3 @@ class User:
             return
 
         self.user = DiscordUser.objects.get(discord_user=self.uid)
-        

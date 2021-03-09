@@ -4,4 +4,6 @@ krw.sqlite3cre
 /venv
 .git
 
+*.pyc
+
 krw.sqlite3
